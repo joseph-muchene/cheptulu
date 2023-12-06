@@ -11,6 +11,10 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
+    * {
+        scroll-behavior: smooth;
+    }
+
     body {
         font-family: 'Roboto Mono', Arial, Helvetica, sans-serif !important;
         font-size: 19px;
@@ -36,11 +40,11 @@
             </div>
             <ul
                 class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="/">Home</a></li>
                 <li class="text-gray-300">
 
                 </li>
-                <li><a class="text-sm text-blue-600 font-bold" href="#">About Us</a></li>
+                <li><a class="text-sm text-blue-600 font-bold" href="#about">About Us</a></li>
                 <li class="text-gray-300">
 
                 </li>
@@ -48,15 +52,16 @@
                 <li class="text-gray-300">
 
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
-                <li class="text-gray-300">
+                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#contact">Contact</a></li>
 
-                </li>
 
             </ul>
-            <button
-                class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-                href="#">Contact us</button>
+            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+                href="#contact">
+
+
+                Contact us
+            </a>
 
         </nav>
         <div class="navbar-menu relative z-50 hidden">
@@ -79,19 +84,19 @@
                     <ul>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Home</a>
+                                href="/">Home</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">About Us</a>
+                                href="#about">About Us</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Services</a>
+                                href="#">Mission</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Pricing</a>
+                                href="#contact">Contact</a>
                         </li>
 
                     </ul>
@@ -100,7 +105,7 @@
                     <div class="pt-6">
                         <button
                             class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-                            href="#">Contact us</button>
+                            href="#contact">Contact us</button>
                     </div>
                     <p class="my-4 text-xs text-center text-gray-400">
                         <span>Copyright © 2023</span>
@@ -134,7 +139,7 @@
         <!-- end slider -->
 
 
-        <section class="content flex flex-col space-y-2 md:flex-row my-9 mx-4 items-center">
+        <section id="about" class="content flex flex-col space-y-2 md:flex-row my-9 mx-4 items-center">
 
             <div class="mx-3 p-10 bg-white rounded md:w-1/2 border-2 border-neutral-800">
                 <div class="flex justify-center">
@@ -145,7 +150,7 @@
                 <p class="text-center ">
                     Cheptulu Sunrise Academy boarding and day school is based at cheptulu Market along Chavakali Eldoret
                     Road
-                    near upendo complex 100 meters from the main road. The school was started with an aim of raising
+                    near upendo complex 1 kilometre from Cheptulu market. The school was started with an aim of raising
                     raising the standard of education especially Shaviringa zone.
                 </p>
 
@@ -431,8 +436,8 @@
         </section>
         <!-- end map -->
         <!-- Contact us form -->
-        <section class="bg-white    mx-4 md:mx-32 ">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <section id="contact" class="bg-white    mx-4 md:mx-32 ">
+            <div class=" py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center ">
                     Contact Us
                 </h2>
