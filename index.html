@@ -9,11 +9,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400&family=Roboto:wght@300&display=swap');
 
 
     body {
         font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+        font-size: 19px;
     }
 </style>
 
@@ -137,7 +138,7 @@
         <section class="content flex flex-col space-y-2 md:flex-row my-9 mx-4 items-center">
 
             <div class="mx-3 p-10 bg-white rounded md:w-1/2">
-                <h1 class="text-center text-3xl">About Us</h1>
+                <h1 class="text-center text-4xl">About Us</h1>
 
                 <p class="text-center ">
                     Cheptulu Sunrise Academy boarding and day is based at cheptulu Market along Chavakali. Eldoret Road
@@ -153,7 +154,7 @@
 
 
             <div class="students">
-                <img src="../cheptulu/students.jpg" class=" block md:rounded-full" alt="...">
+                <img src="../cheptulu/students.jpg" class=" block md:rounded-2xl" alt="...">
             </div>
 
 
@@ -168,10 +169,12 @@
 
         <section class="flex flex-col justify-center items-center mx-4 space-y-4 md:grid grid-cols-2 md:space-x-4 mb-3">
 
-
+            <div>
+                <video src="../cheptulu/vid.mp4" controls class=" block mc-16  rounded-lg " alt="..."></video>
+            </div>
             <div class="bg-[#fff] p-3 rounded-lg">
 
-                <h1 class="text-2xl text-center my-4">Why Choose Us</h1>
+                <h1 class="text-2xl text-center my-4 4xl">Why Choose Us</h1>
 
                 <ol class="flex flex-col space-y-3">
 
@@ -218,9 +221,7 @@
 
 
             </div>
-            <div>
-                <video src="../cheptulu/vid.mp4" controls class=" block mc-16  rounded-lg " alt="..."></video>
-            </div>
+
 
 
 
@@ -229,7 +230,7 @@
         <!-- Testimonials -->
 
         <section class="mb-4">
-            <h1 class="text-center my-3 text-2xl">Testimonials</h1>
+            <h1 class="text-center my-3 text-4xl">Testimonials</h1>
 
 
 
@@ -328,38 +329,238 @@
 
         </section>
 
+
+        <!-- slider -->
+
+        <section class="mx-11 md:mx-40">
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/cheptulu/image 1.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/cheptulu/students.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </section>
+        <!-- end slider -->
+
+
+
         <!-- end testimonials -->
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <!-- Card 1 -->
-            <div class="bg-blue-500 rounded-lg p-4 text-white">
+            <div class="bg-blue-500 rounded-lg p-4 text-white shadow-md">
                 <h1 class="text-2xl mb-2">Mission</h1>
                 <p class="text-lg">To produce disciplined, knowledgeable, and productive citizens</p>
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-green-500 rounded-lg p-4 text-white">
+            <div class="bg-green-500 rounded-lg p-4 text-white shadow-md">
                 <h1 class="text-2xl mb-2">Vision</h1>
                 <p class="text-lg">To be a source of excellence</p>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-red-500 rounded-lg p-4 text-white">
+            <div class="bg-red-500 rounded-lg p-4 text-white shadow-md">
                 <h1 class="text-2xl mb-2">Motto</h1>
                 <p class="text-lg">Arise and shine</p>
             </div>
         </section>
-        <!-- footer -->
-        <!--Footer container-->
-        <footer class="flex flex-col items-center text-center text-white" style="background-color: #333">
 
 
-            <!--Copyright section-->
-            <div class="w-full p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)">
-                Cheptulu Sunrise Academy © 2023 Copyright:
 
+        <!-- Contact us form -->
+        <section class="bg-white dark:bg-gray-900   mx-4 md:mx-32 ">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                    Contact Us
+                </h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a
+                    technical
+                    issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us
+                    know.</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                            email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="name@flowbite.com" required>
+                    </div>
+                    <div>
+                        <label for="subject"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
+                            message</label>
+                        <textarea id="message" rows="6"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" class="btn px-6 py-2 border rounded">Send
+                        message</button>
+                </form>
             </div>
-        </footer>
+        </section>
+
+
+        <!-- end contact us form -->
+
+
+
+        <!-- footer -->
+        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="sm:col-span-2">
+                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+                        <img class="h-10 rounded" src="./cheptulu/logo.jpg" alt="" srcset="">
+                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Cheptulu Sunrise
+                            Academy</span>
+                    </a>
+                    <div class="mt-6 lg:max-w-sm">
+                        <p class="text-sm text-gray-800">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium,
+                            totam rem aperiam.
+                        </p>
+                        <p class="mt-4 text-sm text-gray-800">
+                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-2 text-sm">
+                    <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                    <div class="flex">
+                        <p class="mr-1 text-gray-800">Phone:</p>
+                        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
+                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+                    </div>
+                    <div class="flex">
+                        <p class="mr-1 text-gray-800">Email:</p>
+                        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
+                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+                    </div>
+                    <div class="flex">
+                        <p class="mr-1 text-gray-800">Address:</p>
+                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                            aria-label="Our address" title="Our address"
+                            class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                            312 Lovely Street, NY
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+                    <div class="flex items-center mt-1 space-x-3">
+                        <a href="/"
+                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                                <path
+                                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="/"
+                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                            <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                                <circle cx="15" cy="15" r="4"></circle>
+                                <path
+                                    d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="/"
+                            class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                                <path
+                                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-500">
+                        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+                <p class="text-sm text-gray-600">
+                    © Copyright 2020 Lorem Inc. All rights reserved.
+                </p>
+                <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                    <li>
+                        <a href="/"
+                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="/"
+                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+                            Policy</a>
+                    </li>
+                    <li>
+                        <a href="/"
+                            class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
+                            &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- end footer -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
