@@ -18,10 +18,36 @@
     body {
         font-family: 'Roboto Mono', Arial, Helvetica, sans-serif !important;
         font-size: 19px;
+
     }
 </style>
 
 <body>
+    <!-- top -->
+    <div class="bg-red-500 flex flex-col md:flex-row space-x-4 py-6 mb-0  z-50 text-white relative">
+        <div class="flex flex-col md:flex-row space-x-4 md:items-center  justify-start md:mx-2">
+            <p class="mx-3 md:mx-0">Tel: 0115-811-222</p>
+            <p>Email: cheptulu_sunrise@yahoo.com</p>
+
+
+
+        </div>
+        <div class="relative md:absolute md:right-4 items-center flex justify-center top-3 p-2">
+
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=100054484269885" target="_blank"
+                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-10 rounded-full">
+                        <path
+                            d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
+                        </path>
+                    </svg>
+                </a>
+            </p>
+            <button disabled class="rounded px-6 py-2 mx-4 bg-blue-600 text-white">Enroll</button>
+        </div>
+    </div>
+    <!-- end top -->
     <!-- nav -->
     <!-- component -->
 
@@ -442,18 +468,51 @@
                     Contact Us
                 </h2>
 
-                <form action="#" class="space-y-8">
+                <form id="contact-form" class="space-y-8">
+                    <div class="toaster hidden">
+                        <div id="toast-success"
+                            class="flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+                            role="alert">
+                            <div
+                                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                </svg>
+                                <span class="sr-only">Check icon</span>
+                            </div>
+                            <div class="ms-3 text-sm font-normal">Message was sent successfully.</div>
+                            <button type="button"
+                                class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
+                                data-dismiss-target="#toast-success" aria-label="Close">
+                                <span class="sr-only">Close</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
+                            Name</label>
+                        <input type="email" id="email" name="user_name"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  dark:shadow-sm-light"
+                            placeholder="name" required>
+                    </div>
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                             email</label>
-                        <input type="email" id="email"
+                        <input type="email" id="email" name="user_email"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  dark:shadow-sm-light"
                             placeholder="username@gmail.com" required>
                     </div>
                     <div>
                         <label for="subject"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                        <input type="text" id="subject"
+                        <input type="text" id="subject" name="subject"
                             class="block p-3 w-full text-sm  rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  dark:shadow-sm-light"
                             placeholder="Let us know how we can help you" required>
                     </div>
@@ -461,7 +520,7 @@
                         <label for="message"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
                             message</label>
-                        <textarea id="message" rows="6"
+                        <textarea id="message" rows="6" name="message"
                             class="block p-2.5 w-full text-sm  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
                             placeholder="Leave a comment..."></textarea>
                     </div>
@@ -581,6 +640,36 @@
                     }
                 }
             });
+        </script>
+
+
+
+        <!-- handling forms -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('8xSvbGtAris7lXow8');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_by57r4l', 'template_4edjw8j', this)
+                        .then(function () {
+                            console.log('SUCCESS!');
+
+                            document.querySelector(".toaster").classList.remove("hidden")
+
+
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
         </script>
 
     </body>
